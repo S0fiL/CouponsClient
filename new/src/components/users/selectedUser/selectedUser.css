@@ -1,0 +1,53 @@
+.selectedUser{
+    width: 55%;
+    min-width: 350px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    margin-top: 60px;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3%;
+}
+
+.selectedUser .deleteButton{
+    position: absolute;
+    top: 30px;
+    right: 3%;
+    width: 140px;
+    border-radius: 0 0 0 50px;
+}
+
+.selectedUser h6{
+    display: inline-block;
+    margin: 0 100% 0 0;
+    font-size: 15px;
+}
+
+.selectedUser h5{
+    border: yellow 2px solid;
+    display: inline-block;
+    margin: 0 100% 0 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.selectedUser .purchasesButton{
+    width: 220px;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 0 0 100px 100px;
+}
+
+
+.selectedUser .deletePurchaseButton{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.selectedUser .deletePurchaseButton:hover{
+    cursor: pointer;
+    box-shadow: yellow 0 0 5px;
+}

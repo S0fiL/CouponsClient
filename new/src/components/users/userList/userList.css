@@ -1,0 +1,29 @@
+.userList{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.userList .filters{
+    position: fixed;
+    margin-left: 50px;
+    width: 260px;
+}
+
+.userList input[type=number]{
+    margin-left: 5%;
+    width: 130px;
+}
+
+.userList .users{
+    margin-top: 30px;
+}
+
+.userList input[type=button]{
+    right:5%;
+    position: fixed;
+    z-index: 1000;
+    top:10vw;
+    width: 170px;
+    border-radius: 0 0 100px 100px;
+    background-image: linear-gradient(45deg, black, black,rgba(19, 71, 114), rgba(99, 87, 206), black);
+}

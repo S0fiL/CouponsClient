@@ -1,0 +1,151 @@
+.header2 {
+    display: none;
+    height: 100%;
+    min-height: 42px;
+    width: 100%;
+    min-width: 334px;
+    margin: 0;
+    position: relative;
+    border-bottom: 3px solid rgb(146, 75, 179);
+    box-shadow: 0 0 10px rgb(87, 12, 131);
+    background-color: black;
+    text-align: left;
+}
+
+@media all and (max-width: 665px){
+
+    .header2{
+      display: inline-block;
+    }
+}
+
+.header2 input{
+  height: 70%;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 1.2%;
+  margin-left: 10px;
+  width: 100px;
+  background-color: black;
+  display: inline-block !important;
+  text-align: center;
+  font-size: 17px;
+  outline: none;
+  font-weight: bold !important;
+}
+
+.header2 .purple{
+  border-radius: 5px 50px 5px 5px;
+}
+
+.header2 input:hover{
+  cursor: pointer;
+}
+
+.header2 .profile, .header2 .headerMenu{
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  bottom: 0;
+  z-index: -1;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+
+.header2 .headerMenu{
+  width: 200px;
+  border: solid 3px rgba(60, 191, 231, 0.7);
+  margin-left: 115px;
+  border-radius: 0 0 25px 25px;
+}
+
+.header2 .profile{
+  border: solid 3px rgba(226, 78, 201, 0.7);
+  color: rgba(226, 78, 201, 0.7);
+  border-radius: 0 0 25px 5px;
+  width: 150px;
+}
+
+.header2 .profile a, .header2 .headerMenu a{
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.header2 .cyan{
+  border: solid 3px rgba(60, 191, 231, 0.7);
+  background-image: none;
+  background-color: transparent;
+  color: rgba(60, 191, 231, 0.7);
+}
+
+.header2 .cyan:hover{
+  border: solid 3px rgb(40, 187, 231);
+  color:  rgb(40, 187, 231);
+  text-shadow: 0 0 20px rgb(20, 186, 236),  0 0 20px rgb(20, 186, 236),  0 0 20px rgb(20, 186, 236);
+  box-shadow: 0 0 20px rgb(20, 186, 236);
+}
+
+.headerMenu a{
+  color: rgba(10, 148, 190, 0.9);
+}
+
+.header2 .cyanText:hover{
+  text-shadow: 0 0 30px rgb(88, 183, 212), 0 0 30px rgb(88, 183, 212), 0 0 30px rgb(88, 183, 212);
+  color:  rgb(112, 214, 245);
+}
+
+.header2 .pink{
+  border: solid 3px rgba(226, 78, 201, 0.7);
+  background-image: none;
+  background-color: transparent;
+  color: rgba(226, 78, 201, 0.7);
+}
+
+.header2 .pink:hover{
+  border: solid 3px rgb(228, 100, 206);
+  color:  rgb(228, 100, 206);
+  text-shadow: 0 0 20px rgb(226, 122, 195), 0 0 20px rgb(226, 122, 195);
+  box-shadow: 0 0 20px rgb(226, 122, 195);
+}
+
+.profile a{
+  color: rgba(190, 12, 161, 0.9);
+}
+
+.header2 .pinkText:hover{
+  text-shadow: 0 0 30px rgb(90, 16, 112), 0 0 30px rgb(177, 76, 207), 0 0 30px rgb(177, 76, 207);
+  color: rgb(243, 98, 219);
+}
+
+.header2 .purple{
+  border: solid 3px rgba(151, 25, 201, 0.7);
+  background-image: none;
+  background-color: transparent;
+  color: rgba(151, 25, 201, 0.7);
+}
+
+.header2 .purple:hover{
+  border: solid 3px rgb(167, 54, 211);
+  color:  rgb(167, 54, 211);
+  text-shadow: 0 0 20px rgb(158, 29, 197),  0 0 20px rgb(158, 29, 197),  0 0 20px rgb(158, 29, 197);
+  box-shadow: 0 0 20px rgb(158, 29, 197);
+}
+
+#profileButton:hover ~ .profile{
+  transform: translateY(100%);
+}
+
+.profile:hover{
+  transform: translateY(100%);
+}
+
+#menuButton:hover ~ .headerMenu{
+  transform: translateY(100%);
+}
+
+.headerMenu:hover{
+  transform: translateY(100%);
+}

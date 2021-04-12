@@ -1,0 +1,18 @@
+.footer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border: yellow 3px solid; */
+    border: 3px solid rgb(146, 75, 179);
+    box-shadow: 0 0 10px rgb(87, 12, 131);
+    color: yellow;
+}
+
+.footer h6{
+    position: absolute;
+    font-size: 15px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

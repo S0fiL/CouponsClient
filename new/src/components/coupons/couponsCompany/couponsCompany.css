@@ -1,0 +1,149 @@
+.couponsCompany{
+    width: 100%;
+}
+
+.add{
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(45deg,  rgb(60, 191, 231, 0.3), rgb(151, 25, 201, 0.3), rgb(226, 54, 112, 0.3));
+    width: 220px;
+    height: 330px; 
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.add span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.add h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin: 50% 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+}
+
+.add::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    filter: blur(30px);
+}
+
+.add:hover h1{
+    text-shadow: 0 0 10px rgb(240, 240, 68);
+    z-index: 10;
+}
+
+.add h1:hover{
+    cursor: pointer;
+}
+
+.add:hover span{
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.add:hover::after {
+    background: linear-gradient(45deg, rgb(56, 208, 255, 0.7), rgb(196, 47, 255, 0.7), rgb(241, 56, 118, 0.7));
+}
+
+.couponsCompany .filters{
+    position: fixed;
+    width: 700px;
+    left: 58%;
+    transform: translateX(-50%);
+}
+
+.couponsCompany input[type="text"], .couponsCompany input[type="number"] {
+    margin-left: 3%;
+    width: 150px;
+}
+
+.couponsCompany select {
+    margin-left: 1%;
+    width: 185px;
+}
+
+.couponsCompany .filters p{
+    margin-left: 1%;
+}
+
+.couponsCompany .coupons{
+    margin-top: 40px;
+}
+
+@media all and (max-width: 860px){
+
+    .couponsCompany .filters{
+      width: 230px;
+      height: auto;
+
+      display: inline-block;
+
+      position: fixed;
+      top: 90px;
+      left: 101%;
+      transform: translateX(0);
+      padding: 20px;
+      
+      text-align: left;
+      border-radius: 0 0 0 20px;
+    }
+
+    .couponsCompany .filters input[type=text], .couponsCompany .filters input[type=number]{
+        margin-top: 20px;
+        width: 185px;
+    }
+
+    .couponsCompany .filters img{
+        display: none;
+    }
+
+    .couponsCompany .filters:hover{
+      transition: 1s;
+      transform: translateX(-100%);
+    }
+
+    .couponsCompany .filters::before:hover{
+       transition: 1s;
+       transform: translateX(-100%);
+    }
+
+    .couponsCompany .filters::before{
+        content:  url('../../../resources/loop50.png');
+        width: 60px;
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: -59px;
+        border-radius: 15px 0 0 15px;
+        box-shadow: yellow 0 0 10px;
+    }
+
+    .couponsCompany .filters::after{
+        width: 10px;
+        content: "";
+        background-color: black;
+        top: 0;
+        height: 60px;
+        left: 0;
+        position: absolute ;
+    }
+}

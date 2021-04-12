@@ -1,0 +1,75 @@
+.couponsAdmin{
+    width: 100%;
+}
+
+.couponsAdmin .filters{
+    width: 700px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.couponsAdmin input[type=text], .couponsAdmin input[type=number]{
+   margin-left: 3%;
+   margin-right: 2%;
+   border-radius: 5px;
+   width: 150px;
+}
+
+@media all and (max-width: 860px){
+
+    .couponsAdmin .filters{
+      width: 230px;
+      height: auto;
+ 
+      display: inline-block;
+ 
+      position: fixed;
+      margin: 0;
+      top: 90px;
+      left: 101%;
+      transform: translateX(0);
+      padding: 20px;
+      text-align: left;
+      border-radius: 0 0 0 20px;
+    }
+ 
+    .couponsAdmin .filters img{
+       display: none;
+    }
+ 
+    .couponsAdmin .filters input{
+       margin-top: 20px;
+    }
+ 
+    .couponsAdmin .filters:hover{
+       transition: 1s;
+       transform: translateX(-100%);
+    }
+ 
+    .couponsAdmin .filters::before:hover{
+        transition: 1s;
+        transform: translateX(-100%);
+    }
+ 
+    .couponsAdmin .filters::before{
+         content:  url('../../../resources/loop50.png');
+         width: 60px;
+         height: 50px;
+         background-color: black;
+         position: absolute;
+         top: 0;
+         left: -59px;
+         border-radius: 15px 0 0 15px;
+         box-shadow: yellow 0 0 10px;
+    }
+ 
+    .couponsAdmin .filters::after{
+         width: 10px;
+         content: "";
+         background-color: black;
+         top: 0;
+         height: 60px;
+         left: 0;
+         position: absolute ;
+    }
+}

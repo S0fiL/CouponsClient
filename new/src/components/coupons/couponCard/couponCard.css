@@ -1,0 +1,134 @@
+.container{
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 330px; 
+    margin: 20px 20px;
+}
+
+.couponCard{
+    background: linear-gradient(45deg,  rgb(60, 191, 231, 0.5), rgb(151, 25, 201, 0.5), rgb(226, 54, 112, 0.5));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.couponCard span{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  border-radius: 15px;
+}
+
+.couponCard::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    filter: blur(30px);
+}
+
+.couponCard:hover{
+    background: linear-gradient(45deg,  rgb(56, 208, 255, 0.7), rgb(196, 47, 255, 0.7), rgb(241, 56, 118, 0.7));
+    transform: scale(1.1);
+    z-index: 999;
+    margin: 0;
+    cursor: pointer;
+}
+
+.couponCard:hover span{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.couponCard:hover::after{
+    background: linear-gradient(45deg,  rgb(56, 208, 255, 0.7), rgb(196, 47, 255, 0.7), rgb(241, 56, 118, 0.7));
+}
+
+.couponCard .content{
+    position: relative;
+    z-index: 10;
+    height: 97%;
+    width: 99%;
+}
+
+.content .delete{
+    position: absolute;
+    margin: 2% 0% 0 77%;
+    font-size: 23px;
+    border: none;
+    width:45px;
+    height: 45px;
+    transition: 1s;
+}
+
+.content .delete:hover{
+    transform: scale(1.5);
+}
+
+
+.content .title{
+    width: 85%;
+    height: auto;
+    text-align: left;
+    word-wrap: break-word;
+    position: absolute;
+    margin: 21% 0 0 10%;
+    font-size: 18px;
+    word-wrap: break-word;
+} 
+
+.content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 80%;
+    border: solid yellow 3px;
+    margin: 57% 0 0 10%;
+    color: yellow;
+    font-size: 20px;
+}
+
+.couponInfo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23%;
+    width: 80%;
+    margin: 108% 0 0 10%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.couponInfo h3{
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.couponInfo h2{
+    margin-top: 6px;
+    font-weight: bold !important;
+    font-size: 20px;
+}
+
+.content h6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 6% 0 0 8%;
+    display: inline-block;
+    font-size: 13px;
+} 

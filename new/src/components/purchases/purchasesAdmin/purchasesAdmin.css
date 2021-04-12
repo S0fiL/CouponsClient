@@ -1,0 +1,25 @@
+.purchasesAdmin{
+    width: 100%;
+    height: 100%;
+}
+
+.purchasesAdmin .filters{
+    margin-left: 50px;
+    right: 0;
+    width: 260px;
+}
+
+.purchasesAdmin input[type=number]{
+    margin-left: 5%;
+    width: 130px;
+}
+
+.adminPurchasesList .deletePurchaseButton{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.adminPurchasesList .deletePurchaseButton:hover{
+    cursor: pointer;
+    box-shadow: yellow 0 0 5px;
+}

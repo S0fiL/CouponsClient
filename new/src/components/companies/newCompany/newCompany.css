@@ -1,0 +1,30 @@
+.newCompany{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.newCompany form{
+    min-width: 330px;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3%;
+}
+
+.newCompany input[type=text]{
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    padding : 10px;
+}
+
+.newCompany input[type=submit]{
+   margin-top: 25px;
+   width: 160px;
+   height: 30px;
+   border-radius: 0 0 100px 100px;
+}

@@ -1,0 +1,32 @@
+.modal .close{
+    width: 100px;
+    border-radius: 0 0 100px 100px;
+}
+ 
+.modal .confirm{
+     width: 100px;
+     border-radius: 0 0 100px 0;
+     margin-left: 5px;
+     margin-top: 10px;
+}
+
+.modal .cancel{
+    width: 100px;
+    border-radius: 0 0 0 100px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.modal .forward, .modal .return{
+    width: 150px;
+    border-radius: 0 0 100px 0;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.modal .closeReturn, .modal .closeForward{
+    width: 150px;
+    border-radius: 0 0 0 100px;
+    margin-right: 5px;
+    margin-top: 10px;
+}

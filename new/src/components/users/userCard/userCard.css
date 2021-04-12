@@ -1,0 +1,71 @@
+.userCard{
+    display: inline-block;
+    border-radius: 15px;
+    background-color: black;
+    padding: 10px;
+    width: 450px;
+    height: 160px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgb(87, 12, 131);
+    border: solid 3px rgb(132, 75, 179);
+    text-align: left;
+}
+
+.userCard:hover{
+    cursor: pointer;
+}
+
+.userCard .userContent{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+
+.userCard h5, .userCard h3, .userCard h4, .userCard h6{
+    margin-left: 5px !important;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.userCard h5{
+    font-size: 12px;
+}
+
+.userCard h4{
+    font-size: 17px;
+}
+
+.identifiers{
+    grid-column: 4/6;
+    grid-row: 1/3;
+    text-align: right;
+    margin-bottom: 20px !important;
+    font-size: 17px;
+}
+
+.status{
+    border: yellow 2px solid;
+    border-radius: 5px;
+    width: auto;
+    text-align: center !important;
+}
+
+.userCard .mail{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    line-height: 2.1;
+}
+
+.userCard .first{
+    grid-column: 1/6;
+    grid-row: 4;
+    line-height: 0.5 !important;
+}
+
+.userCard .last{
+    grid-column: 1/6;
+    grid-row: 5;
+}

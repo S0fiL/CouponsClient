@@ -1,0 +1,21 @@
+.header {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    border: 3px solid rgb(146, 75, 179);
+    box-shadow: 0 0 10px rgb(87, 12, 131);
+    /* border-bottom:  yellow 3px solid; */
+}
+
+.headerImg{
+    height: 100%;
+    width: 100%;
+}
+
+@media all and (max-width: 665px){
+
+    .header{
+      display: none;
+    }
+}

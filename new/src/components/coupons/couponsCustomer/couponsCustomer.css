@@ -1,0 +1,83 @@
+.couponsCustomer{
+    height: 100%;
+    width: 100%;
+}
+
+.couponsCustomer .filters{  
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+}
+
+.couponsCustomer input, .couponsCustomer select{
+    margin-right: 2%;
+}
+
+.couponsCustomer select{
+    width: 185px;
+    margin-left: 1%;
+}
+
+.couponsCustomer p{
+    margin-left: 3%;
+}
+
+@media all and (max-width: 1080px){
+
+    .couponsCustomer .filters{
+      width: 230px;
+      height: auto;
+ 
+      display: inline-block;
+ 
+      position: fixed;
+      margin: 0;
+      top: 110px;
+      left: 101%;
+      transform: translateX(0);
+      padding: 20px;
+      text-align: left;
+      border-radius: 0 0 0 20px;
+    }
+ 
+    .couponsCustomer .filters img{
+       display: none;
+    }
+ 
+    .couponsCustomer .filters input[type="text"],  .couponsCustomer .filters input[type="number"]{
+       margin-top: 20px;
+       width: 185px;
+    }
+ 
+    .couponsCustomer .filters:hover{
+       transition: 1s;
+       transform: translateX(-100%);
+    }
+ 
+    .couponsCustomer .filters::before:hover{
+        transition: 1s;
+        transform: translateX(-100%);
+    }
+ 
+    .couponsCustomer .filters::before{
+         content:  url('../../../resources/loop50.png');
+         width: 60px;
+         height: 50px;
+         background-color: black;
+         position: absolute;
+         top: 0;
+         left: -59px;
+         border-radius: 15px 0 0 15px;
+         box-shadow: yellow 0 0 10px;
+    }
+ 
+    .couponsCustomer .filters::after{
+         width: 10px;
+         content: "";
+         background-color: black;
+         top: 0;
+         height: 60px;
+         left: 0;
+         position: absolute ;
+    }
+}

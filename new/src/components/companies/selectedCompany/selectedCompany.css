@@ -1,0 +1,64 @@
+.selectedCompany{
+    width: 60%;
+    min-width: 450px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3%;
+}
+
+.selectedCompany h2{
+    margin-top: 70px;
+}
+
+.selectedCompany .deleteCompanyButton{
+    position: absolute;
+    top: 30px;
+    right: 3%;
+    width: 150px;
+    border-radius: 0 0 50px 0;
+}
+
+.selectedCompany .editCompany{
+    position: absolute;
+    top: 30px;
+    right: 180px;
+    width: 150px;
+    border-radius: 0 0 0 50px;
+}
+
+.selectedCompany h6{
+    display: inline-block;
+    margin: 0 100% 0 0;
+    font-size: 15px;
+}
+
+.selectedCompany .mail{
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.selectedCompany input{
+    height: 40px;
+}
+
+.selectedCompany .purchasesButton{
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 0 0 100px 100px;
+}
+
+.selectedCompany .deletePurchaseButton{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.selectedCompany .deletePurchaseButton:hover{
+    cursor: pointer;
+    box-shadow: yellow 0 0 5px;
+}

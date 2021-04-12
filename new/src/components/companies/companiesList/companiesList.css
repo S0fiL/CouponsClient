@@ -1,0 +1,95 @@
+.companiesList{
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.companiesList .filters{
+   width: 410px;
+   left: 60%;
+}
+
+.companiesList input[type=number], .companiesList input[type=text]{
+  margin-left: 20px;
+  width: 130px;
+}
+
+.companiesList input[type=button]{
+   left:25%;
+   position: fixed;
+   z-index: 1000;
+   top:10vw;
+   width: 150px;
+   border-radius: 0 0 100px 100px;
+   background-image: linear-gradient(45deg, black, black,rgba(19, 71, 114), rgba(99, 87, 206), black);
+}
+
+.companiesList tr {
+   cursor: pointer;
+}
+
+@media all and (max-width: 860px){
+
+   .companiesList .filters{
+     width: 230px;
+     height: auto;
+
+     display: inline-block;
+
+     position: fixed;
+      top: 90px;
+      left: 101%;
+      padding: 20px;
+     text-align: left;
+     border-radius: 0 0 0 20px;
+   }
+
+   .companiesList .filters img{
+      display: none;
+   }
+
+   .companiesList .filters input{
+      margin-top: 20px;
+   }
+
+   .companiesList .filters:hover{
+      transition: 1s;
+      transform: translateX(-100%);
+    }
+
+    .companiesList .filters::before:hover{
+       transition: 1s;
+       transform: translateX(-100%);
+    }
+
+    .companiesList .filters::before{
+        content:  url('../../../resources/loop50.png');
+        width: 60px;
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: -59px;
+        border-radius: 15px 0 0 15px;
+        box-shadow: yellow 0 0 10px;
+    }
+
+    .companiesList .filters::after{
+        width: 10px;
+        content: "";
+        background-color: black;
+        top: 0;
+        height: 60px;
+        left: 0;
+        position: absolute ;
+    }
+
+   
+}
+
+@media all and (max-width: 665px){
+
+   .companiesList input[type=button]{
+      left: 10%;
+   }
+}

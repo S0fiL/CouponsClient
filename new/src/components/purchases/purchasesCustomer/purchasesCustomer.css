@@ -1,0 +1,15 @@
+.purchasesCustomer{
+    width: 100%;
+    height: 100%;
+}
+
+.purchasesCustomer .filters{
+    margin-left: 50px;
+    right: 0;
+    width: 260px;
+}
+
+.purchasesCustomer input[type=number]{
+    margin-left: 5%;
+    width: 130px;
+}

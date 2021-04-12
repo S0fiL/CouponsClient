@@ -1,0 +1,39 @@
+.newUser{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.newUser form{
+    min-width: 330px;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3%;
+}
+
+.newUser input, .newUser select {
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    padding : 10px;
+}
+
+.newUser select{
+    padding: 0 10px 0 10px !important;
+}
+
+.newUser p {
+    display: inline-block;
+}
+
+.newUser input[type=submit]{
+   padding: 0;
+   margin-top: 30px;
+   width: 180px;
+   border-radius: 0 0 100px 100px;
+   position: relative;
+}

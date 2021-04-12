@@ -1,0 +1,16 @@
+.purchasesCompany{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.purchasesCompany .filters{
+    margin-left: 50px;
+    right: 0;
+    width: 260px;
+}
+
+.purchasesCompany input[type=number]{
+    margin-left: 5%;
+    width: 130px;
+}
